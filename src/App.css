@@ -1,0 +1,134 @@
+/* General styling for the app */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f7;
+  color: #333;
+}
+
+/* Main app container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Input form section */
+.input-section {
+  max-width: 400px; /* Reduced width of the input section */
+  margin: 0 auto; /* Center the input section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-section label {
+  display: block;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.input-section select,
+.input-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Chart section */
+.chart-section {
+  margin-top: 30px; /* Space above the chart section */
+}
+
+.chart-section canvas {
+  max-width: 600px; /* Adjust the size of the chart */
+  margin: 0 auto; /* Center the chart */
+}
+
+/* Optimized factors */
+.optimized-factors {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.optimized-factors p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.optimized-factors p span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .input-section {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .input-section button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .chart-section canvas {
+    max-width: 100%;
+  }
+}
