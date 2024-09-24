@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/accenture_frontend/static/css/main.5ef9a856.css",
+    "main.js": "/accenture_frontend/static/js/main.97d6c889.js",
+    "index.html": "/accenture_frontend/index.html",
+    "main.5ef9a856.css.map": "/accenture_frontend/static/css/main.5ef9a856.css.map",
+    "main.97d6c889.js.map": "/accenture_frontend/static/js/main.97d6c889.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ef9a856.css",
+    "static/js/main.97d6c889.js"
+  ]
+}
