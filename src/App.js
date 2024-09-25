@@ -55,12 +55,13 @@ const App = () => {
       
       // Parse the response from the backend
       const result = await response.json();
-
+      console.log(result); 
       // Check if the backend returned valid data
       if (response.ok) {
         // Update the state with the optimized values
         setOptimizedDimensions(result.optimized_packaging);
         setSurfaceArea(result.surfaceArea);
+        console.log(surfaceArea);
         setMaterialCost(result.materialUsed);
       } else {
         console.error("Error:", result.error);
@@ -160,9 +161,9 @@ const App = () => {
       <div className="optimized-factors">
         <h3>Optimized Factors</h3>
         <p>Optimized Weight: {weight} grams</p>
-        <p>Optimized Height: {optimizedDimensions.height ? optimizedDimensions.height.toFixed(2) : height} cm</p>
-        <p>Optimized Length: {optimizedDimensions.length ? optimizedDimensions.length.toFixed(2) : length} cm</p>
-        <p>Optimized Width: {optimizedDimensions.width ? optimizedDimensions.width.toFixed(2) : width} cm</p>
+        <p>Optimized Height: {optimizedDimensions.newheight ? optimizedDimensions.newheight.toFixed(2) : height} cm</p>
+        <p>Optimized Length: {optimizedDimensions.newlength ? optimizedDimensions.newlength.toFixed(2) : length} cm</p>
+        <p>Optimized Width: {optimizedDimensions.newwidth ? optimizedDimensions.newwidth.toFixed(2) : width} cm</p>
         <p>Surface Area: {surfaceArea ? surfaceArea.toFixed(2) : 'N/A'} sq. cm</p>
         <p>Material Cost: {materialCost ? materialCost.toFixed(2) : 'N/A'} (unit: INR)</p>
       </div>
