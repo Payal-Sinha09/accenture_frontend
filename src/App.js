@@ -3,6 +3,8 @@ import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './App.css';
 
+dotenv.config({ path: 'config/uri.env' });
+
 const App = () => {
   // State variables for inputs
   const [material, setMaterial] = useState('');
@@ -39,10 +41,10 @@ const App = () => {
 
     // Prepare the dimensions and material type to send to the backend
     const dimensions = [parseFloat(length), parseFloat(width), parseFloat(height)];
-
+    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
     try {
       // Send a request to the backend to calculate optimized packaging
-      const response = await fetch('http://localhost:5000/optimize-packaging', {
+      const response = await fetch(`${API_URL}/optimize-packaging`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
