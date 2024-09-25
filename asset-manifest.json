@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/accenture_frontend/static/css/main.5ef9a856.css",
-    "main.js": "/accenture_frontend/static/js/main.509d8543.js",
+    "main.js": "/accenture_frontend/static/js/main.ff96067a.js",
     "index.html": "/accenture_frontend/index.html",
     "main.5ef9a856.css.map": "/accenture_frontend/static/css/main.5ef9a856.css.map",
-    "main.509d8543.js.map": "/accenture_frontend/static/js/main.509d8543.js.map"
+    "main.ff96067a.js.map": "/accenture_frontend/static/js/main.ff96067a.js.map"
   },
   "entrypoints": [
     "static/css/main.5ef9a856.css",
-    "static/js/main.509d8543.js"
+    "static/js/main.ff96067a.js"
   ]
 }
